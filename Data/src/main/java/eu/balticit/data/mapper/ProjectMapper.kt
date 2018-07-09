@@ -4,6 +4,9 @@ import eu.balticit.data.model.ProjectEntity
 import eu.balticit.domain.model.Project
 import javax.inject.Inject
 
+/**
+ * Class used to map Project Entity in Domain and Data layers
+ */
 class ProjectMapper @Inject constructor(): EntityMapper<ProjectEntity, Project> {
     override fun mapFromEntity(entity: ProjectEntity): Project {
         return Project(entity.id, entity.name, entity.fullName, entity.starCount,
