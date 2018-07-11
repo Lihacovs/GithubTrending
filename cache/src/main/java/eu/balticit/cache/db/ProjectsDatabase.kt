@@ -11,7 +11,7 @@ import eu.balticit.cache.model.Config
 import javax.inject.Inject
 
 @Database(entities = arrayOf(CachedProject::class,
-        Config::class), version = 1)
+        Config::class), version = 1, exportSchema = false)
 abstract class ProjectsDatabase @Inject constructor(): RoomDatabase() {
 
     abstract fun cachedProjectsDao(): CachedProjectsDao

@@ -4,6 +4,7 @@ import eu.balticit.data.model.ProjectEntity
 import eu.balticit.data.repository.ProjectsCache
 import eu.balticit.data.repository.ProjectsDataStore
 import io.reactivex.Completable
+import io.reactivex.Flowable
 import io.reactivex.Observable
 import javax.inject.Inject
 
